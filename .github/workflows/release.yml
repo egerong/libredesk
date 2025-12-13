@@ -58,5 +58,5 @@ jobs:
           args: release --parallelism 1 --clean
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DOCKER_ORG: ${{ secrets.DOCKER_ORG:-libredesk }}
+          DOCKER_ORG: ${{ secrets.DOCKERHUB_ORG || 'libredesk' }}
           GITHUB_ORG: ${{ github.repository_owner }}
