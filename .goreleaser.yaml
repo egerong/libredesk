@@ -174,7 +174,7 @@ docker_manifests:
 
 release:
   github:
-    owner: abhinavxd
+    owner: {{ .Env.GITHUB_ORG }}
     name: libredesk
   prerelease: auto
   draft: true
